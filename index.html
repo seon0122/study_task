@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <title>서울특별시</title>
     <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +19,8 @@
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 팝업요소 -->
+    <a href="#" id="top"><img src="./images/btn_top.png" alt=""></a>
     <header>
         <div id="h_top">
             <div class="left">
@@ -38,6 +42,32 @@
                 <li><a href="#">나의서울</a></li>
                 <li><a href="#">전자우편</a></li>
             </ul>
+        </div>
+        <div id="h_btm">
+            <h1><a href="#"><img src="./images/seoul-slogan.png" alt="동행·매력 특별시서울"></a></h1>
+            <form action="#" method="get" id="search_frm">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="search" autofocus name="search_txt" placeholder="검색어를 입력해 주세요.">
+                    <button type="submit" id="search_btn"><img src="./images/search.png" alt="검색"></button>
+                </fieldset>
+            </form>
+            <div class="right">
+                <form action="#" method="get" id="langfrm">
+                    <fieldset>
+                        <legend class="skip">언어선택양식</legend>
+                        <select name="lang_g">
+                            <option value="en">ENGLISH</option>
+                            <option value="ko">KOREAN</option>
+                        </select>
+                        <button type="submit" id="lang_btn">GO</button>
+                    </fieldset>
+                </form>
+                <div class="weather">
+                    <p class="current_weather"><img src="./images/weathericon.png" alt="흐림"><em>27.5℃</em></p>
+                    <p class="current_dust">미세먼지(좋음) 초미세먼지(보통)</p>
+                </div>
+            </div>
         </div>
     </header>
     <main>

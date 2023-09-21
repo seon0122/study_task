@@ -30,6 +30,8 @@ header #h_top .right {
 header #h_top .right li {}
 header #h_top .right li a {font-weight: 500;}
 header #h_top .right li a:hover {color:#2392e9;}
+
+/* main */
 main {margin-top: 20px;}
 main .login_wrap {}
 main .login_wrap .title {
@@ -62,7 +64,7 @@ main .login_wrap .contents h3 {
     border:2px solid #2392e9; 
     border-bottom:none; 
     position: relative; 
-    bottom:-22px;
+    bottom:-2px;
     background: #fff;
     border-top-left-radius:25px; border-top-right-radius:25px;
     /* width:50%; */

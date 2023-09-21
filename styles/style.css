@@ -1,7 +1,15 @@
+body, html {scroll-behavior:smooth;}
 /* all-layout */
 header, main, footer {
     width:1152px; margin:0 auto;
 }
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height:34px;
+}
+#top img {width:100%}
+/* header */
 header {}
 header #h_top {
     height: 70px; 
@@ -30,6 +38,82 @@ header #h_top .right {
 header #h_top .right li {}
 header #h_top .right li a {font-weight: 500;}
 header #h_top .right li a:hover {color:#2392e9;}
+header #h_btm {
+    /* background:pink; */
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header #h_btm h1 {}
+header #h_btm h1 a {}
+header #h_btm h1 a img {width: 100%;}
+header #h_btm #search_frm {
+    width: 370px;
+    border: 2px solid #1e6cb3;
+    padding: 10px 20px 0;
+    /* display: flex; */
+}
+header #h_btm #search_frm fieldset {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+header #h_btm #search_frm fieldset input {
+    width: calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset #search_btn {
+    width: 20px;
+    background: none;
+    cursor: pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {width: 100%;}
+header #h_btm .right {
+    height: 120px;
+}
+header #h_btm .right #langfrm {
+    text-align: right;
+}
+header #h_btm .right #langfrm fieldset {}
+header #h_btm .right #langfrm fieldset select {
+    font-size: 0.833rem;
+    width: 93px;
+    padding: 5px 0;
+    border: 1px solid #1e6cb3;
+}
+header #h_btm .right #langfrm fieldset select option {
+    font-size: 0.833rem;
+}
+header #h_btm .right #langfrm fieldset #lang_btn {
+    width: 39px; height: 30px;
+    margin-left: 10px;
+    font-size: 0.833rem;
+    background: #1e6cb3;
+    color:#fff;
+    border: 0;
+    cursor: pointer;
+}
+header #h_btm .right .weather {
+    /* height: 60px; */
+}
+header #h_btm .right .weather .current_weather {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+header #h_btm .right .weather .current_weather img {
+    width: 100%;
+}
+header #h_btm .right .weather .current_weather em {
+    font-size: 1.7rem; font-weight: 500;
+    margin-left: 10px;
+}
+header #h_btm .right .weather .current_dust {
+    font-size: 0.833rem;
+}
+
+/* main */
 main {margin-top: 20px;}
 main .visual {
     height: 300px;
