@@ -109,7 +109,7 @@ main .login_wrap .contents .join a .fa-user {
     padding-right:5px;
 }
 main .login_wrap .contents .join a span {}
-footer {margin-top: 100px;}
+footer {margin-top: 100px; margin-bottom: 100px;}
 footer .top {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
@@ -154,7 +154,7 @@ footer .btm .left {
 }
 footer .btm .left p {padding-right: 10px;}
 footer .btm .left p img {}
-footer .btm .left address {line-height:20px; letter-spacing:-0.06em;}
+footer .btm .left address {line-height:22px; letter-spacing:-0.06em;}
 footer .btm .right {}
 footer .btm .right a {}
 footer .btm .right a img {}

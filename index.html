@@ -6,6 +6,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>서울특별시</title>
+    <!-- slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -73,9 +75,17 @@
     <main>
         <section class="visual">
             <div class="left">
-                <a href="#" class="traffic_control">
-                    <img src="./images/7a5fe57c68224102859d01e92ead7951.jpg" alt="7월 16일 일요일 10시부터 21시 대학로 차없는 거리 교통통제 구간 확인하세요">
-                </a>
+                <div class="slide">
+                    <a href="#" class="traffic_control">
+                        <img src="./images/7a5fe57c68224102859d01e92ead7951.jpg" alt="7월 16일 일요일 10시부터 21시 대학로 차없는 거리 교통통제 구간 확인하세요">
+                    </a>
+                    <a href="#" class="culter">
+                        <img src="./images/banner002.jpg" alt="365일 문화가 가득한 곳, 온라인 문화일번지 서울문화포털">
+                    </a>
+                    <a href="#" class="house">
+                        <img src="./images/banner003.png" alt="2023 서울도시건축센터 체험 프로그램 나의집 만들기 심화반">
+                    </a>
+                </div>
             </div>
             <div class="right">
                 <a href="#" class="contest">
@@ -178,6 +188,33 @@
                 </div>
             </div>
         </section>
+        <section class="service service2">
+            <div class="title">
+                <h2>분야별 정보</h2>
+            </div>
+            <div class="contents">
+                <a href="#"><img src="./images/icon_service2/icon_house.png" alt=""><span>주택</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_economy.png" alt=""><span>경제</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_traffic.png" alt=""><span>교통</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_environment.png" alt=""><span>환경</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_welfare.png" alt=""><span>복지</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_safty.png" alt=""><span>안전</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_culture.png" alt=""><span>문화</span></a>
+                <a href="#"><img src="./images/icon_service2/icon_work.png" alt=""><span>행정</span></a>
+            </div>
+        </section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"><a href="#"><img src="./images/icon_slide/slide001.jpg" alt=""></a></div>
+                <div class="swiper-slide slide2"><a href="#"><img src="./images/icon_slide/slide002.jpg" alt=""></a></div>
+                <div class="swiper-slide slide3"><a href="#"><img src="./images/icon_slide/slide003.jpg" alt=""></a></div>
+                <div class="swiper-slide slide4"><a href="#"><img src="./images/icon_slide/slide004.jpg" alt=""></a></div>
+                <div class="swiper-slide slide5"><a href="#"><img src="./images/icon_slide/slide005.jpg" alt=""></a></div>
+                <div class="swiper-slide slide6"><a href="#"><img src="./images/icon_slide/slide006.jpg" alt=""></a></div>
+                <div class="swiper-slide slide7"><a href="#"><img src="./images/icon_slide/slide007.jpg" alt=""></a></div>
+                <div class="swiper-slide slide8"><a href="#"><img src="./images/icon_slide/slide008.jpg" alt=""></a></div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="top">
@@ -210,5 +247,30 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // $('.visual .left a').hide()
+        let count = 0
+        setInterval(function(){
+            count++
+            if(count>2){count=0}
+            let total = count * 300
+            console.log(total)
+            $('.visual .slide').css('transform',`translateY(-${total}px)`)
+        },3000)
+
+        // slide
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 33,
+            loop:true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            speed:500,
+        })
+    </script>
 </body>
 </html>
