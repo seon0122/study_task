@@ -77,8 +77,8 @@ header #h_btm .right #langfrm {
 header #h_btm .right #langfrm fieldset {}
 header #h_btm .right #langfrm fieldset select {
     font-size: 0.833rem;
-    width: 93px;
-    padding: 5px 0;
+    width: 100px;
+    padding: 5px;
     border: 1px solid #1e6cb3;
 }
 header #h_btm .right #langfrm fieldset select option {
@@ -122,6 +122,7 @@ main .visual {
 main .visual .left {
     width: 55%;
     overflow: hidden;
+    margin-right: 10px
 }
 main .visual .left .slide {
     transition: all 0.5s;
